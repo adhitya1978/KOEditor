@@ -1,0 +1,272 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\MyKO.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxribbon.rc""   // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\komyko.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 177, 104
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "About MyKO"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "MyKO, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2021",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,120,83,50,14,WS_GROUP
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 423, 261
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "KO - Option Editor"
+FONT 8, "Comic Sans MS", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Load",IDOK,300,229,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,356,229,50,14
+    GROUPBOX        "Gamma Settings:",IDC_STATIC,215,168,185,56
+    LTEXT           "Character",IDC_STATIC,222,179,33,8
+    LTEXT           "Object",IDC_STATIC,222,194,22,8
+    LTEXT           "Terrain",IDC_STATIC,222,209,24,8
+    GROUPBOX        "Gameplay:",IDC_STATIC,12,14,195,93
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,69,29,108,13,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT1,180,30,22,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Visibility:",IDC_STATIC,20,33,28,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,69,47,108,13,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT2,180,47,22,13,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "Camera View:",IDC_STATIC,18,50,45,8
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_NOTICKS | WS_BORDER | WS_TABSTOP,20,131,158,13,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    LTEXT           "3D Positional Audio:",IDC_STATIC,21,123,64,8,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SLIDER4,"msctls_trackbar32",TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,69,66,109,13,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT4,180,66,22,13,ES_READONLY | ES_NUMBER
+    LTEXT           "Glow && Terrain:",IDC_STATIC,17,68,50,8
+    GROUPBOX        "Video",IDC_STATIC,211,14,195,213
+    GROUPBOX        "Audio",IDC_STATIC,12,111,195,114
+    CONTROL         "Background Music",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,23,158,170,10
+    CONTROL         "Environmental Effects",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,23,169,170,10
+    CONTROL         "Ambient Sound",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,23,180,170,10
+    COMBOBOX        IDC_COMBO1,277,38,122,47,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Resolutions:",IDC_STATIC,217,41,40,8
+    CONTROL         "Window Mode",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,216,99,184,10
+    CONTROL         "Show Cursor",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,216,109,184,10
+    COMBOBOX        IDC_COMBO2,298,177,94,31,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Chat && DMG mode",IDC_STATIC,217,55,59,8
+    COMBOBOX        IDC_COMBO3,298,192,94,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Inventory Design",IDC_STATIC,217,71,56,8
+    CONTROL         "Show wings",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,216,118,184,10
+    LTEXT           "Skill Detail (FX):",IDC_STATIC,217,85,50,8
+    COMBOBOX        IDC_COMBO4,298,207,94,27,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,296,53,103,31,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,296,68,103,31,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,296,83,104,31,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Show Shadows",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,216,127,184,10
+    CONTROL         "Auto updated:",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,216,145,184,10
+    PUSHBUTTON      "Save",IDC_BUTTON1,10,228,50,14
+    PUSHBUTTON      "About",IDC_BUTTON2,63,228,50,14
+    PUSHBUTTON      "Default",IDC_BUTTON3,116,228,50,14
+    COMBOBOX        IDC_COMBO8,277,23,121,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Active Display:",IDC_STATIC,216,25,50,8
+    LTEXT           "Min",IDC_STATIC,70,81,12,8
+    LTEXT           "Max",IDC_STATIC,165,81,14,8
+    EDITTEXT        IDC_EDIT5,181,131,22,13,ES_READONLY | ES_NUMBER
+    LTEXT           "Min",IDC_STATIC,20,145,12,8
+    LTEXT           "Max",IDC_STATIC,164,144,14,8
+    CONTROL         "Show Path",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,216,136,184,10
+    CONTROL         "Weapon Effect:",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,216,155,184,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "ARKS Solution"
+            VALUE "FileDescription", "MyKO"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MyKO.exe"
+            VALUE "LegalCopyright", "(c) ARKS Solution.  All rights reserved."
+            VALUE "OriginalFilename", "MyKO.exe"
+            VALUE "ProductName", "Option Editor"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 416
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 254
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAIN_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About KO-Option..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\MyKO.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#if !defined(_AFXDLL)
+#include "afxribbon.rc"   // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
